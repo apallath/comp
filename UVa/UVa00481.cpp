@@ -1,5 +1,3 @@
-//UVa481 - What Goes Up
-//Concept - O(nlgn) algorithm for Longest Increasing Subsequence
 #include<iostream>
 #include<vector>
 #include<stack>
@@ -13,7 +11,7 @@ int binarySearch(vi &seq, vi &lisidx, int l, int r, int t){
     if(seq[lisidx[m]] < seq[t]){return binarySearch(seq, lisidx, m+1, r, t);}
     if(seq[lisidx[m]] > seq[t]){return binarySearch(seq, lisidx, l, m-1, t);}
 }
-int main(){
+int main(){ //For UVa00481
     int temp;
     vi seq; //contains sequence
     while(cin>>temp){ seq.push_back(temp); }
